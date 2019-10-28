@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasicMaster.master.cs" Inherits="ShreyDynTravels.BasicMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <asp:Image ID="logo" runat="server" />
+        &nbsp;ShreyDyn Travels</div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <asp:Table ID="Table1" runat="server" Width="935px">
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        Phone: +91-8696970260<br/>
+                        Mail: support@sdtravels.com
+                    </asp:TableCell>
+                    <asp:TableCell runat="server" HorizontalAlign="Right">&copy; ShreyDyn Travels Inc.</asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </div>
+    </form>
+</body>
+</html>
