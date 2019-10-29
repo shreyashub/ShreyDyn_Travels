@@ -4,15 +4,15 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>SHREYDYN TRAVELS</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="header">
-            <asp:Image ID="logo" runat="server" />
-        &nbsp;ShreyDyn Travels</div>
+            <asp:Image ID="logo" runat="server" ImageUrl="~/sdlogo.jpg" Height="150px" Width="150px"/>
+        &nbsp;<b >ShreyDyn Travels</b></div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
