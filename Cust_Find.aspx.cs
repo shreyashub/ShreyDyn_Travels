@@ -26,6 +26,7 @@ namespace ShreyDynTravels
                 ATDownList.Items.Insert(0, new ListItem("Any", String.Empty));
                 ATDownList.SelectedIndex = 0;
             }
+            HyperLink1.Visible = false;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -45,6 +46,8 @@ namespace ShreyDynTravels
                 command.Parameters.AddWithValue("@bid", Int32.Parse(GridView1.SelectedRow.Cells[1].Text));
                 ab = command.ExecuteNonQuery();
                 if (ab > 0) { Result.Text = "Booking Succesful!";
+                    HyperLink1.Visible = true;
+                    HyperLink1.NavigateUrl = "BookDetails.aspx?BkID=" + GridView1.SelectedRow.Cells[1].Text;
                 }
             }
             else { Result.Text = "Booking Failed. Please Try Again"; }

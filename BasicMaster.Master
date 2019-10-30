@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="header">
-            <asp:Image ID="logo" runat="server" />
+            <asp:Image ID="logo" runat="server" ImageUrl="~/sdlogo.jpg" Height="100px" Width="100px"/>
         &nbsp;ShreyDyn Travels</div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

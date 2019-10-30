@@ -51,6 +51,7 @@
             </asp:GridView>
             <asp:Button ID="Button2" runat="server" Text="BOOK" OnClick="Button2_Click" />
             <asp:Label ID="Result" runat="server"></asp:Label>
+            <asp:HyperLink ID="HyperLink1" runat="server" Visible="false" >See Details</asp:HyperLink>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IT_ProjectConnectionString %>" SelectCommand="SELECT [BusID],[StartLoc], [EndLoc], [Owner], [Capacity], [EndTime], [StartTime], [Cost], [DoJ] FROM [Bus] WHERE (([Capacity] &gt; @Capacity) AND ([DoJ] = @DoJ) AND ([EndLoc] = @EndLoc) AND ([EndTime] between @EndTime1 and @EndTime2)  AND ([StartLoc] = @StartLoc) AND ([StartTime] BETWEEN @StartTime1 and @StartTime2))" FilterExpression="[Owner] LIKE '%{0}%'">
                 <SelectParameters>
                     <asp:Parameter DefaultValue="0" Name="Capacity" Type="Int32" />

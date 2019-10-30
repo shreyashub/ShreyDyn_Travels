@@ -71,6 +71,7 @@
     <Content Include="Ad_BusAdd.aspx" />
     <Content Include="Ad_BusList.aspx" />
     <Content Include="Ad_BusRemove.aspx" />
+    <Content Include="BookDetails.aspx" />
     <Content Include="Cust_AllBook.aspx" />
     <Content Include="Cust_CancelBook.aspx" />
     <Content Include="Cust_Find.aspx" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="BasicMaster.Master.designer.cs">
       <DependentUpon>BasicMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BookDetails.aspx.cs">
+      <DependentUpon>BookDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookDetails.aspx.designer.cs">
+      <DependentUpon>BookDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="custM.master.cs">
       <DependentUpon>custM.master</DependentUpon>
@@ -177,6 +185,9 @@
     <Content Include="BasicMaster.Master" />
     <Content Include="adminM.master" />
     <Content Include="custM.master" />
+    <Content Include="App_Themes\admin\admin.skin" />
+    <Content Include="App_Themes\customer\customer.skin" />
+    <Content Include="App_Themes\basic\basic.skin" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
