@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/BasicMaster.Master" AutoEventWireup="true" CodeBehind="adminM.master.cs" Inherits="ShreyDynTravels.adminM" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Menu runat="server" OnMenuItemClick="Unnamed1_MenuItemClick" Orientation="Horizontal">
+        <Items>
+            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/AdminHome.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Bus" Value="Bus">
+                <asp:MenuItem Text="Add" Value="Add" NavigateUrl="~/Ad_BusAdd.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Delete" Value="Delete" NavigateUrl="~/Ad_BusRemove.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="List All" Value="List All" NavigateUrl="~/Ad_BusList.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Add Admin" Value="Add Admin"></asp:MenuItem>
+            <asp:MenuItem Text="User List" Value="User"></asp:MenuItem>
+            <asp:MenuItem Text="Sign Out" Value="Sign Out" NavigateUrl="~/Intro.aspx"></asp:MenuItem>
+        </Items>
+    </asp:Menu>
+    <asp:ContentPlaceHolder ID="BodyHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

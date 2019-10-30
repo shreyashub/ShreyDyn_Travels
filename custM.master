@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/BasicMaster.Master" AutoEventWireup="true" CodeBehind="custM.master.cs" Inherits="ShreyDynTravels.custM" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Menu runat="server"  Orientation="Horizontal">
+        <Items>
+            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Cust_Home.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Find Bus" Value="Find Bus" NavigateUrl="~/Cust_Find.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Cancel Booking" Value="Cancel Booking" NavigateUrl="~/Cust_CancelBook.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="My Bookings" Value="My Bookings" NavigateUrl="~/Cust_AllBook.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Sign Out" Value="Sign Out" NavigateUrl="~/Intro.aspx"></asp:MenuItem>
+        </Items>
+    </asp:Menu>
+    <asp:ContentPlaceHolder ID="BodyHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -15,10 +15,10 @@
             </asp:TableCell>
         </asp:TableRow>
         <asp:TableRow runat="server">
-            <asp:TableCell runat="server" HorizontalAlign="Center">New User? <asp:HyperLink ID="HyperLink1" runat="server">Sign Up</asp:HyperLink></asp:TableCell>
+            <asp:TableCell runat="server" HorizontalAlign="Center">New User? <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx">Sign Up</asp:HyperLink></asp:TableCell>
         </asp:TableRow>
     </asp:Table>
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/g1.png"  />
+            
             </div>
         <div id="image_side"></div>
     </div>

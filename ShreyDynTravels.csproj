@@ -67,16 +67,95 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminHome.aspx" />
+    <Content Include="Ad_BusAdd.aspx" />
+    <Content Include="Ad_BusList.aspx" />
+    <Content Include="Ad_BusRemove.aspx" />
+    <Content Include="Cust_AllBook.aspx" />
+    <Content Include="Cust_CancelBook.aspx" />
+    <Content Include="Cust_Find.aspx" />
+    <Content Include="Cust_Home.aspx" />
     <Content Include="Intro.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminM.master.cs">
+      <DependentUpon>adminM.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminM.master.designer.cs">
+      <DependentUpon>adminM.master</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_BusAdd.aspx.cs">
+      <DependentUpon>Ad_BusAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ad_BusAdd.aspx.designer.cs">
+      <DependentUpon>Ad_BusAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_BusList.aspx.cs">
+      <DependentUpon>Ad_BusList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ad_BusList.aspx.designer.cs">
+      <DependentUpon>Ad_BusList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_BusRemove.aspx.cs">
+      <DependentUpon>Ad_BusRemove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ad_BusRemove.aspx.designer.cs">
+      <DependentUpon>Ad_BusRemove.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BasicMaster.Master.cs">
       <DependentUpon>BasicMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BasicMaster.Master.designer.cs">
       <DependentUpon>BasicMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="custM.master.cs">
+      <DependentUpon>custM.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custM.master.designer.cs">
+      <DependentUpon>custM.master</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_AllBook.aspx.cs">
+      <DependentUpon>Cust_AllBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_AllBook.aspx.designer.cs">
+      <DependentUpon>Cust_AllBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_CancelBook.aspx.cs">
+      <DependentUpon>Cust_CancelBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_CancelBook.aspx.designer.cs">
+      <DependentUpon>Cust_CancelBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_Find.aspx.cs">
+      <DependentUpon>Cust_Find.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_Find.aspx.designer.cs">
+      <DependentUpon>Cust_Find.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_Home.aspx.cs">
+      <DependentUpon>Cust_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_Home.aspx.designer.cs">
+      <DependentUpon>Cust_Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Intro.aspx.cs">
       <DependentUpon>Intro.aspx</DependentUpon>
@@ -86,9 +165,18 @@
       <DependentUpon>Intro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="BasicMaster.Master" />
+    <Content Include="adminM.master" />
+    <Content Include="custM.master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
