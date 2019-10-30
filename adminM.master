@@ -12,7 +12,7 @@
             </asp:MenuItem>
             <asp:MenuItem Text="Add Admin" Value="Add Admin"></asp:MenuItem>
             <asp:MenuItem Text="User List" Value="User"></asp:MenuItem>
-            <asp:MenuItem Text="Sign Out" Value="Sign Out" NavigateUrl="~/Intro.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Sign Out" Value="Sign Out"></asp:MenuItem>
         </Items>
     </asp:Menu>
     <asp:ContentPlaceHolder ID="BodyHolder" runat="server">

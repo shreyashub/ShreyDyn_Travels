@@ -16,7 +16,16 @@ namespace ShreyDynTravels
 
         protected void Unnamed1_MenuItemClick(object sender, MenuEventArgs e)
         {
-
+            if (e.Item.Text == "Sign Out")
+            {
+                HttpCookie cook = Request.Cookies["Credentials"];
+                if (cook != null)
+                {
+                    cook.Expires = DateTime.Now.AddDays(-1);
+                    Response.Cookies.Add(cook);
+                }
+                Response.Redirect("~/Intro.aspx");
+            }
         }
     }
 }
